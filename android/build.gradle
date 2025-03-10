@@ -1,4 +1,4 @@
-group = "com.example.my_location_plugin"
+group = "com.jason.native_location_plugin"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -9,8 +9,9 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.1.0")
+        classpath("com.android.tools.build:gradle:8.1.2")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+        classpath("com.google.gms:google-services:4.3.10")
     }
 }
 
@@ -26,7 +27,7 @@ apply plugin: "kotlin-android"
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace = "com.example.my_location_plugin"
+        namespace = "com.jason.native_location_plugin"
     }
 
     compileSdk = 34
@@ -52,6 +53,7 @@ android {
     dependencies {
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
+        implementation 'com.google.android.gms:play-services-location:21.0.1'
     }
 
     testOptions {

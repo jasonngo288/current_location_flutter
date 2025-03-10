@@ -2,13 +2,13 @@ import Flutter
 import UIKit
 import CoreLocation
 
-public class MyLocationPlugin: NSObject, FlutterPlugin, CLLocationManagerDelegate {
+public class NativeLocationPlugin: NSObject, FlutterPlugin, CLLocationManagerDelegate {
     private var locationManager = CLLocationManager()
     private var result: FlutterResult?
 
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "my_location_plugin", binaryMessenger: registrar.messenger())
-        let instance = MyLocationPlugin()
+        let channel = FlutterMethodChannel(name: "native_location_plugin", binaryMessenger: registrar.messenger())
+        let instance = NativeLocationPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
 

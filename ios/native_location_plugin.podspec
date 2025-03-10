@@ -3,7 +3,7 @@
 # Run `pod lib lint my_location_plugin.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'my_location_plugin'
+  s.name             = 'native_location_plugin'
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter plugin project.'
   s.description      = <<-DESC

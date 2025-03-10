@@ -4,7 +4,10 @@ description: >
   using native APIs on Android (Kotlin) and iOS (Swift). This plugin ensures high accuracy
   and works with minimal setup.
 version: 0.0.1
-homepage:
+homepage: https://github.com/jasonngo288/current_location_flutter
+repository: https://github.com/jasonngo288/current_location_flutter
+issue_tracker: https://github.com/jasonngo288/current_location_flutter/issues
+license: MIT
 
 environment:
   sdk: ^3.5.4
@@ -38,10 +41,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.my_location_plugin
-        pluginClass: MyLocationPlugin
+        package: com.jason.native_location_plugin
+        pluginClass: NativeLocationPlugin
       ios:
-        pluginClass: MyLocationPlugin
+        pluginClass: NativeLocationPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
@@ -73,3 +76,10 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/to/font-from-package
+topics:
+  - location
+  - gps
+  - geolocation
+  - flutter-plugin
+  - android
+  - ios

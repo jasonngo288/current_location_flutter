@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_location_plugin/my_location_plugin.dart';
+import 'package:native_location_plugin/native_location_plugin.dart';
 
 void main() => runApp(MyApp());
 

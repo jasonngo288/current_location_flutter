@@ -1,6 +1,6 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-import 'my_location_plugin_method_channel.dart';
+import 'native_location_plugin_method_channel.dart';
 
 abstract class MyLocationPluginPlatform extends PlatformInterface {
   /// Constructs a MyLocationPluginPlatform.
