@@ -114,7 +114,7 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 ## 📜 License
-This project is licensed under the MIT License. See LICENSE for details.
+MIT
 
 ## 🏷️ Tags
 Flutter, Location, GPS, Geolocation, Native Plugin, Android, iOS
